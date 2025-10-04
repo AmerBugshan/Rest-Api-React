@@ -9,7 +9,7 @@ function App() {
   const [selectedCountry, setSelectedCountry] = useState('')
   const [publicOnly, setPublicOnly] = useState(false)
 
-  const API_URL = import.meta.env.VITE_API_URL || ''
+  const API_URL = import.meta.env.VITE_API_URL || 'https://rest-api-react-yz5v.onrender.com'
 
   useEffect(() => {
     fetchDestinations()
