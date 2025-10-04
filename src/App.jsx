@@ -9,7 +9,7 @@ function App() {
   const [selectedCountry, setSelectedCountry] = useState('')
   const [publicOnly, setPublicOnly] = useState(false)
 
-  const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000'
+  const API_URL = import.meta.env.VITE_API_URL || ''
 
   useEffect(() => {
     fetchDestinations()
